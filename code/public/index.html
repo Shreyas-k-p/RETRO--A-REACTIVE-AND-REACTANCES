@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4-Player Reaction Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div id="name-screen">
+    <h1>🎮 Enter Player Names</h1>
+    <div class="player-inputs">
+      <input id="player1" placeholder="🦁 Player 1 (A)" />
+      <input id="player2" placeholder="🐯 Player 2 (B)" />
+      <input id="player3" placeholder="🐵 Player 3 (1)" />
+      <input id="player4" placeholder="🦄 Player 4 (9)" />
+    </div>
+    <button id="startBtn">Start Game 🚀</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <h1>⚡ Reaction Time!</h1>
+    <div id="status">Get Ready...</div>
+    <button id="reactionBtn">PRESS!</button>
+
+    <div id="winner-section" class="hidden">
+      <h2>🎉 Winner!</h2>
+      <div id="winnerName"></div>
+      <img id="winnerImage" src="" alt="Winner Image" />
+      <button id="resetBtn">Play Again 🔁</button>
+    </div>
+
+    <div id="scoreboard">
+      <h3>📊 Scores</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="scoreTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

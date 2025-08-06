@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+background-image: url('\\public\\12.jpg');
+
+}
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #002b00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-inputs input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#reactionBtn {
+  font-size: 24px;
+  background-color: limegreen;
+  padding: 20px 60px;
+  margin: 30px auto;
+}
+
+#scoreboard {
+  margin-top: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: #003300;
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+#winnerImage {
+  max-width: 200px;
+  margin-top: 20px;
+}
